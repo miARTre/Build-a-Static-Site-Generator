@@ -65,14 +65,9 @@ class TestHTMLNode(unittest.TestCase):
         self.assertEqual(html_output, '<p>Hello, world</p>')
 
     def test_to_html_no_tag(self):
-        node = LeafNode(None, "Just some text")
+        node = LeafNode("", "Just some text")
         html_output = node.to_html()
         self.assertEqual(html_output, "Just some text")
-
-        
-        
-        
-
 
 
 
