@@ -32,7 +32,7 @@ class LeafNode(HTMLNode):
         if self.value is None:
             raise ValueError("All leaf nodes must have a value.")
         
-        if self.tag is None:
+        if self.tag == "":
             # If there's no tag, just return the raw value.
             return self.value
 
